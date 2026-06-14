@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: burger-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: burger
+  template:
+    metadata:
+      labels:
+        app: burger
+    spec:
+      containers:
+      - name: nginx
+        image: burger-site:latest
+        imagePullPolicy: Never   
+        - containerPort: 80
