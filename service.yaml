@@ -1,4 +1,5 @@
-piVersion: v1
+cat > service.yaml << 'EOF'
+apiVersion: v1
 kind: Service
 metadata:
   name: burger-service
@@ -10,3 +11,4 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30080
+EOF
