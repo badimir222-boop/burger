@@ -15,5 +15,6 @@ spec:
       containers:
       - name: nginx
         image: burger-site:latest
-        imagePullPolicy: Never   
+        imagePullPolicy: Never
+        ports:
         - containerPort: 80
