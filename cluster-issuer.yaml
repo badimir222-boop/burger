@@ -1,4 +1,4 @@
-cat > cluster-issuer.yaml << 'EOF'
+cat > cluster-issuer.yaml 
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
@@ -14,4 +14,3 @@ spec:
         ingress:
           class: nginx
 EOF
-
