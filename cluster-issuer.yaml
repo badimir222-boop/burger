@@ -6,7 +6,7 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email: your-email@example.com   # ЗАМЕНИТЕ НА СВОЙ EMAIL
+    email: your-email@example.com
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
@@ -14,3 +14,4 @@ spec:
         ingress:
           class: nginx
 EOF
+
